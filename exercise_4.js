@@ -1,3 +1,4 @@
+//ejercicio 4
 function mayor(){ //capturar el valor de ambos números enteros
     let mayorn=0; //si se cumple o no la condición se almacenara en esta variable, sera la propiedad a mostrar
     let num1 = parseInt(document.getElementById("numero1").value); //almacenar dato entero con parseInt para convertir el string en un entero.
