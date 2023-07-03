@@ -31,7 +31,7 @@ function calcularNota() {// recibimos los datos
     asistencia = asistencia * 0.1;
     investigacion = investigacion * 0.3;
     let notaFinal = examen + tareas + asistencia + investigacion;
-
+  //Condicionamos la nota final
         if( notaFinal >= 60){
             return `Alumno: ${nombre} <br> Carnet: ${carnet} <br>  Nota final: ${notaFinal}pts. <br> Resultado: SATISFACTORIO <br>(Aprobó el curso FSJ).`;
         }else{
