@@ -87,17 +87,31 @@
             <!-- fs-?? - font size from 1 biggest to 6 smallest -->
             <!-- fw-?? - font weight turns lighter -->
                 <h2 class="fs-1 fw-bolder">Instructions:</h2>
-                <p class="lead fs-3">Crear una función que....</p>
+                <p class="lead fs-3">Crear una función que valide las entradas de datos de un formulario, si el usuario no ha llenado todos los campos que muestre una alerta que “no ha completado el formulario” de lo contrario mostrara una alerta de los datos ingresados. </p>
             </article>
 
             <!-- right side -->
             <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">example</h2>
-    <label for="" class="fs-3 lead">Ingresa tu example</label>
-    <input type="example" class="example" name="example" id="example">
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
+                <h2 class="fs-1 fw-bolder">Ejemplo: Crea tu usuario</h2>
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ejemplo: Jose Chacon">
+                </div>
+                <div class="mb-3">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="tel" name="numero" id="tel" class="form-control" placeholder="(código) 0000 0000">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="usuario@dominio.com">
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" id="botonD" class="btn btn-primary">Registrar</button>
+                </div>
             </article>
         </section>
     </main>
