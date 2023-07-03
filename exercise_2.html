@@ -95,18 +95,30 @@
                     <li>asistencia = 10%</li>
                     <li>investigación = 30%</li>
                 </ul>
-
                 <p class="lead fs-3">Al final deberá mostrar los datos del alumno, nombre, carnet y nota final.</p>
+                <p>Nota: Condicionamos de la manera que si el alumno saca una nota mayor a 60 dirá que este ganó el curso y si casa una nota menor a 60, dirá que perdió el curso.</p>
 
             </article>
 
             <!-- right side -->
-            <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">Nota Final!</h2>
-    <label for="" class="fs-3 lead">Ingresa tu calificacion</label>
-    <input type="number" class="#" name="#" id="#">
+            <article class="col-md-7 ps-5 ">
+                <h2 class="fs-1 fw-bolder">Calculadora de Notas</h2>
+
+                <label for="" class="fs-5 lead"> Nombre completo del alumno: </label> <br>
+                <input placeholder="Ej. Auron sosa" type="text" id="nombre" /><br>
+                <label for="" class="fs-5 lead"> Carnet del alumno: </label><br>
+                <input placeholder="Ej. 104FSJ18" type="text"  id="carnet" /><br>
+                <label for="" class="fs-5 lead">Nota final del examén: </label><br>
+                <input placeholder="Nota Examén" type="text" id="examen" /><br>
+                <label for="" class="fs-5 lead"> Nota final de las tareas: </label><br>
+                <input placeholder="Nota Tareas" type="text" id="tareas" /><br>
+                <label for="" class="fs-5 lead"> Nota final de la asistencia: </label><br>
+                <input placeholder="Nota Asistencia" type="text" id="asistencia" /><br>
+                <label for="" class="fs-5 lead"> Nota final de la investigación: </label><br>
+                <input placeholder="Nota Investigación" type="text" id="investigacion" /><br>
     <br>
-    <button onclick="obtenerExample()">Enviar</button>
+    <button onclick="calcularNota()">Calcular nota</button>
+     <p id="nota" class="fs-3"></p>
             </article>
         </section>
     </main>
