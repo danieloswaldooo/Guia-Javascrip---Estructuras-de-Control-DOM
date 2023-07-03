@@ -95,22 +95,23 @@
                 <h2 class="fs-1 fw-bolder">Ejemplo: Calular el número mayor</h2>
                 <div class="mb-3">
                     <label for="numero1" class="form-label">Ingrese el primer número</label>
-                    <input type="text" name="num1" id="numero1" class="form-control">
+                    <input type="text" name="num1" id="numero1" class="form-control"> <!-- ingreso de valor de parte del usuario -->
                 </div>
                 <div class="mb-3">
                     <label for="numero2" class="form-label">Ingrese el segundo número</label>
-                    <input type="text" name="num2" id="numero2" class="form-control">
+                    <input type="text" name="num2" id="numero2" class="form-control"> <!-- ingreso de valor de parte del usuario -->
                 </div>
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
+
+                <!-- apartado del boton Calcular -->
+                <button onclick="mayor()">Calcular</button><br><br>
+
+                <div class="mb-3">
+                    <label for="resultado" class="form-label">El número mayor es:</label>
+                    <input type="text" name="resul" id="resultado" class="form-control">
+                </div>
             </article>
         </section>
     </main>
 </body>
-<script>
-    function example(){}
-        
-    
-</script>
+<script src="exercise_4.js"></script>
 </html>
