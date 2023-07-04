@@ -86,18 +86,30 @@
             <article class="col-md-5">
             <!-- fs-?? - font size from 1 biggest to 6 smallest -->
             <!-- fw-?? - font weight turns lighter -->
-                <h2 class="fs-1 fw-bolder">Instructions:</h2>
-                <p class="lead fs-3">Crear una función que....</p>
+                <h2 class="fs-1 fw-bolder">Instrucciones:</h2>
+                <p class="lead fs-3">Realizar programa para una web, en el cual el usuario introduce 2 notas y su valor ponderado (como cuando un examen vale un 30% y otro examen el 70%). Pulsando el botón “Calcula”, la web muestra como resultado la nota media ponderada. </p>
             </article>
 
             <!-- right side -->
             <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">example</h2>
-    <label for="" class="fs-3 lead">Ingresa tu example</label>
-    <input type="example" class="example" name="example" id="example">
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
+                <h2 class="fs-1 fw-bolder">Ejemplo: Calcular la media de notas</h2>
+                <div class="mb-3">
+                    <label for="valor1" class="form-label">Ingrese el valor de la primer nota:</label>
+                    <input type="text" name="val1" id="valor1" class="form-control"> <!-- ingreso de valor de parte del usuario -->
+                </div>
+                <div class="mb-3">
+                    <label for="valor2" class="form-label">Ingrese el valor de la segunda nota:</label>
+                    <input type="text" name="val2" id="valor2" class="form-control"> <!-- ingreso de valor de parte del usuario -->
+                </div>
+
+                <div class="mb-3">
+                <button onclick="media()">Calcular</button><br>
+                </div>
+
+                <div class="mb-3">
+                    <label for="resultado" class="form-label">La media de las notas es:</label>
+                    <input type="text" name="resul" id="resultado" class="form-control">
+                </div>
             </article>
         </section>
     </main>
