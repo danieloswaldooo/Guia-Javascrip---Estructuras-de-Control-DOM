@@ -95,20 +95,21 @@
                 <h2 class="fs-1 fw-bolder">Ejemplo: Calcular la media de notas</h2>
                 <div class="mb-3">
                     <label for="valor1" class="form-label">Ingrese el valor de la primer nota:</label>
-                    <input type="text" name="val1" id="valor1" class="form-control"> <!-- ingreso de valor de parte del usuario -->
-                </div>
-                <div class="mb-3">
+                    <input type="text" name="valor1" id="valor1" class="form-control">
+
+                    <label for="ponderacion1" class="form-label">Ingrese el valor ponderado de la primer nota:</label>
+                    <input type="number" name="ponderacion1" id="ponderacion1" class="form-control">
+
                     <label for="valor2" class="form-label">Ingrese el valor de la segunda nota:</label>
-                    <input type="text" name="val2" id="valor2" class="form-control"> <!-- ingreso de valor de parte del usuario -->
-                </div>
+                    <input type="text" name="valor2" id="valor2" class="form-control">
 
-                <div class="mb-3">
-                <button onclick="media()">Calcular</button><br>
-                </div>
+                    <label for="ponderacion2" class="form-label">Ingrese el valor ponderado de la segunda nota:</label>
+                    <input type="number" name="ponderacion2" id="ponderacion2" class="form-control"> <br>
 
-                <div class="mb-3">
-                    <label for="resultado" class="form-label">La media de las notas es:</label>
-                    <input type="text" name="resul" id="resultado" class="form-control">
+                    <button onclick="calcularNotaMediaPonderada()">Calcular</button> <br> <br>
+
+                    <label for="resultado" class="form-label">La media de las notas es:</label> <br>
+                    <input type="text" name="resultado" id="resultado" class="form-control">
                 </div>
             </article>
         </section>
