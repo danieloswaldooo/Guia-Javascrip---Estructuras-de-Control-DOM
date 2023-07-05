@@ -102,20 +102,75 @@
         </section>
         <section class="row pt-5 d-flex align-items-center">
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 100%;">
                     <img src="./assets/img/FORDE5-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title fs-2">FORD FIESTA</h5>
                       <p class="card-text">El Ford Fiesta es un automóvil de turismo del segmento B desarrollado por la filial europea de la empresa estadounidense Ford Motor Company, y fabricado en Alemania, España, Brasil, México, China, India y Sudáfrica.</p>
-                      <h4>Descuento del 5%</h4>
-                      <p class="text-secondary">Disponiple en color: Rojo, Verde y Azul.</p>
-                      <a href="#" class="btn btn-primary">Ver más</a>
+                      <h5>Precio Nuevo $150</h5>
+                      <h5>Precio Usado $120</h5>
+                      <h6>Descuento del 5%</h6>
+                      <p class="text-secondary">Disponiple en color: Rojo, Verde, Azul y Negro.</p>
+                      <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('fiesta')" >FORD FIESTA</button></div>
                     </div>
                   </div>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                <img src="./assets/img/FORDE5-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">FORD FOCUS</h5>
+                  <p class="card-text">El Ford Focus es un automóvil del segmento C desarrollado por la filial europea de la empresa estadounidense Ford Motor Company, fabricado en Saarlouis Alemania y es el tercer más vendido del mundo.</p>
+                  <h5>Precio Nuevo $190.00</h5>
+                  <h5>Precio Usado $170.00</h5>
+                  <h6>Descuento del 10%</h6>
+                  <p class="text-secondary">Disponiple en color: Azul, Negro, Verde y Blanco.</p>
+                  <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('focus')" >FORD FOCUS</button></div>
+                </div>
+              </div></div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                <img src="./assets/img/FORDE5-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">FORD ESCAPE</h5>
+                  <p class="card-text">El Ford Escape es un automóvil del segmento C desarrollado por la filial europea de la empresa estadounidense Ford Motor Company, fabricado en Alemania siendo un cinco plazas con carrocería de cinco puertas.</p>
+                  <h5>Precio Nuevo $200.00</h5>
+                  <h5>Precio Usado $185.00</h5>
+                  <h6>Descuento del 20%</h6>
+                  <p class="text-secondary">Disponiple en color: Negro, Blanco, Rojo y Naranja</p>
+                  <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('escape')" >FORD ESCAPE</button></div>
+                </div>
+              
+        </section>
+        <section class="py-3">
+        <div id="camposAdicionales" style="display: none;">
+            <h2>Campos de relleno:</h2>
+            <label for="color" class="form-label">COLOR:</label>
+            <select id="color" class="form-select">
+              <!-- Opciones de color se generarán dinámicamente según el carro seleccionado -->
+            </select><br>
+            <label for="estado" class="form-label">ESTADO:</label>
+            <select id="estado" onchange="actualizarPrecio()" class="form-select">
+              <option value="nuevo">NUEVO</option>
+              <option value="usado">USADO</option>
+            </select><br>
+            <label for="nombre" class="form-label">NOMBRE:</label>
+            <input type="text" id="nombre" class="form-control"><br>
+            <label for="direccion" class="form-label">DIRECCION:</label>
+            <input type="text" id="direccion" class="form-control"><br> <br>
+            <button class="btn btn-primary" onclick="generarFactura()">Generar Factura</button>
+          </div>
+
+          <div id="factura" style="display: none;" class="py-3">
+            <h2>Factura:</h2>
+            <p id="modelo"></p>
+            <p id="colorSeleccionado"></p>
+            <p id="estadoSeleccionado"></p>
+            <p id="precioSinDescuento"></p>
+            <p id="precioConDescuento"></p>
+            <p id="direccionSeleccionada"></p>
+            <p id="nombreSeleccionado"></p>
+          </div>
         </section>
     </main>
 </body>
