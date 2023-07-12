@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Exercise 12</title>
 </head>
 <body>
@@ -80,10 +81,10 @@
 
     <h1 class="fs-1 fw-bolder d-flex justify-content-center">Exercise#12</h1>
     <!-- class container is used to give space on the right and left side -->
-    <main class="container">
-        <section class="row pt-5 d-flex align-items-center">
+    <main class="container pt-4">
+        <section class="row  d-flex align-items-center">
             <!-- left side -->
-            <article class="col-md-5">
+            <article class="col-md-6 bg-body-secondary bg-body-tertiary">
             <!-- fs-?? - font size from 1 biggest to 6 smallest -->
             <!-- fw-?? - font weight turns lighter -->
                 <h2 class="fs-1 fw-bolder">Instructions:</h2>
@@ -93,7 +94,8 @@
                     <li>Las edades de 6 estudiantes del turno tarde.</li>
                     <li>Las edades de 11 estudiantes del turno noche.</li>
                 </ul>
-
+            </article>
+            <article class="col-md-6 ">
                 <p><span><strong>Nota:</strong></span> Las edades de cada estudiante se deberán ingresar por la web. Lo que queremos devolver:</p>
 
                 <ul>
@@ -102,16 +104,44 @@
                     <li>Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayo</li>
                 </ul>
             </article>
-
-            <!-- right side -->
-            <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">example</h2>
-    <label for="" class="fs-3 lead">Ingresa tu example</label>
-    <input type="example" class="example" name="example" id="example">
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
-            </article>
+        </section>
+       <h1 class="fs-1 fw-bolder d-flex justify-content-center py-3">Promedio de edades por turno</h1>
+        <section class="row text-center px-5 bg-body-tertiary">
+            <div class="col-md-4 pt-3">
+                <h2 class="fw-bold">Turno Mañana</h2>
+                <p class="fs-5">Ingrese las edades de los 5 estudiantes:</p>
+                <input type="number" id="manana1" placeholder="edad estudiantes 1" class="form-label"><br>
+                <input type="number" id="manana2" placeholder="edad estudiantes 2" class="form-label"><br>
+                <input type="number" id="manana3" placeholder="edad estudiantes 3" class="form-label"><br>
+                <input type="number" id="manana4" placeholder="edad estudiantes 4" class="form-label"><br>
+                <input type="number" id="manana5" placeholder="edad estudiantes 5" class="form-label"><br>
+            </div>
+            <div class="col-md-4 pt-3">
+                 <h2 class="fw-bold">Turno Tarde</h2>
+                 <p class="fs-5">Ingrese las edades de los 6 estudiantes:</p>
+                <input type="number" id="tarde1" placeholder="edad estudiantes 1" class="form-label"><br>
+                <input type="number" id="tarde2" placeholder="edad estudiantes 2" class="form-label"><br>
+                <input type="number" id="tarde3" placeholder="edad estudiantes 3" class="form-label"><br>
+                <input type="number" id="tarde4" placeholder="edad estudiantes 4" class="form-label"><br>
+                <input type="number" id="tarde5" placeholder="edad estudiantes 5" class="form-label"><br>
+                <input type="number" id="tarde6" placeholder="edad estudiantes 6" class="form-label"><br>
+            </div>
+            <div class="col-md-4 py-3">
+                 <h2 class="fw-bold">Turno Noche</h2>
+                 <p class="fs-5">Ingrese las edades de los 11 estudiantes:</p>
+                <input type="number" id="noche1"placeholder="edad estudiantes 1" class="form-label"/><br>
+                <input type="number" id="noche2" placeholder="edad estudiantes 2" class="form-label"><br>
+                <input type="number" id="noche3" placeholder="edad estudiantes 3" class="form-label"><br>
+                <input type="number" id="noche4" placeholder="edad estudiantes 4" class="form-label"><br>
+                <input type="number" id="noche5" placeholder="edad estudiantes 5" class="form-label"><br>
+                <input type="number" id="noche6" placeholder="edad estudiantes 6" class="form-label"><br>
+                <input type="number" id="noche7" placeholder="edad estudiantes 7" class="form-label"><br>
+                <input type="number" id="noche8" placeholder="edad estudiantes 8" class="form-label"><br>
+                <input type="number" id="noche9" placeholder="edad estudiantes 9" class="form-label"><br>
+                <input type="number" id="noche10" placeholder="edad estudiantes 10" class="form-label"><br>
+                <input type="number" id="noche11" placeholder="edad estudiantes 11" class="form-label"><br>            
+            </div>
+            <button class="btn btn-primary "  onclick="calcularPromedios()">Calcular Promedios</button>
         </section>
     </main>
 </body>
