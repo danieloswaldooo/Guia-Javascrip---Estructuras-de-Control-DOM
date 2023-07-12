@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Exercise 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -105,7 +106,6 @@
                       <h5>Precio Usado $120</h5>
                       <h6>Descuento del 5%</h6>
                       <p class="text-secondary">Disponiple en color: Rojo, Verde, Azul y Negro.</p>
-                      <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('fiesta')" >FORD FIESTA</button></div>
                     </div>
                   </div>
             </div>
@@ -119,7 +119,6 @@
                   <h5>Precio Usado $170.00</h5>
                   <h6>Descuento del 10%</h6>
                   <p class="text-secondary">Disponiple en color: Azul, Negro, Verde y Blanco.</p>
-                  <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('focus')" >FORD FOCUS</button></div>
                 </div>
               </div></div>
             <div class="col-md-4">
@@ -132,10 +131,15 @@
                   <h5>Precio Usado $185.00</h5>
                   <h6>Descuento del 20%</h6>
                   <p class="text-secondary">Disponiple en color: Negro, Blanco, Rojo y Naranja</p>
-                  <div id="carros" ><button class="btn btn-primary" onclick="seleccionarCarro('escape')" >FORD ESCAPE</button></div>
                 </div>
-              
         </section>
+        <h1 class="fs-1 fw-bolder d-flex justify-content-center text-primary my-3">Selecciona un Carro</h1>
+        <select id="carros" class="form-select text-bg-primary" onchange="mostrarCamposAdicionales()">
+          <option value="">Seleccione un carro</option>
+          <option value="fiesta">FORD FIESTA</option>
+          <option value="focus">FORD FOCUS</option>
+          <option value="escape">FORD ESCAPE</option>
+        </select>
         <section class="py-3">
         <div id="camposAdicionales" style="display: none;">
             <h2>Campos de relleno:</h2>
@@ -153,17 +157,6 @@
             <label for="direccion" class="form-label">DIRECCION:</label>
             <input type="text" id="direccion" class="form-control"><br> <br>
             <button class="btn btn-primary" onclick="generarFactura()">Generar Factura</button>
-          </div>
-
-          <div id="factura" style="display: none;" class="py-3">
-            <h2>Factura:</h2>
-            <p id="modelo"></p>
-            <p id="colorSeleccionado"></p>
-            <p id="estadoSeleccionado"></p>
-            <p id="precioSinDescuento"></p>
-            <p id="precioConDescuento"></p>
-            <p id="direccionSeleccionada"></p>
-            <p id="nombreSeleccionado"></p>
           </div>
         </section>
     </main>
