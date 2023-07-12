@@ -77,27 +77,53 @@
             </div>
         </nav>
     </header>
-
-    <h1 class="fs-1 fw-bolder d-flex justify-content-center">Exercise#9</h1>
+    <h1 class="fs-1 fw-bolder d-flex justify-content-center , text-center">Exercise#9</h1>
     <!-- class container is used to give space on the right and left side -->
-    <main class="container">
+    <main class="container-xxl">
         <section class="row pt-5 d-flex align-items-center">
             <!-- left side -->
             <article class="col-md-5">
             <!-- fs-?? - font size from 1 biggest to 6 smallest -->
             <!-- fw-?? - font weight turns lighter -->
                 <h2 class="fs-1 fw-bolder">Instructions:</h2>
-                <p class="lead fs-3">Crear una función que....</p>
+                <p class="lead fs-3">
+                    
+                    Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:  
+                    
+                    La cantidad de valores negativos ingresados. 
+                    
+                    La cantidad de valores positivos ingresados. 
+                    
+                    La cantidad de múltiplos de 15. 
+                    
+                    El valor acumulado de los números ingresados que son pares.
+                    </p>
+                    <br>
+                    <br>
+            
             </article>
-
-            <!-- right side -->
-            <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">example</h2>
-    <label for="" class="fs-3 lead">Ingresa tu example</label>
-    <input type="example" class="example" name="example" id="example">
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
+            <article class="container-fluid , align-items-center">
+            <h1>Contador de valores enteros</h1>
+            <!-- Entradas  o campos donde vamos a colocar los numeros -->
+            <input type="number" id="valorE1" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE2" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE3" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE4" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE5" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE6" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE7" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE8" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE9" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
+            <input type="number" id="valorE10" required class="form-label , row-cols-6, col-6, text-bg-light"><br><br>
+            <!-- Enviar los datos recuperamos por medio de la funcion onclick-->
+            <button onclick="contarValores()">Calcular</button>
+        </article>
+            <!-- Es donde se van a imprimir los valores-->
+            <h2>Valores:</h2>
+            <p>Valores negativos: <span id="Negativos"></span></p>
+            <p>Valores positivos: <span id="Positivos"></span></p>
+            <p>Múltiplos de 15: <span id="Multiplos15"></span></p>
+            <p>Valor acumulado de números pares: <span id="AcumuladoValorPares"></span></p>
             </article>
         </section>
     </main>
