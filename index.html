@@ -80,73 +80,87 @@
                 </div>
             </div>
         </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/carrusel 1.png" class="d-block w-100" alt="ilustracion de curso">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="fw-bolder" style="color: #E5D6FF;">APRENDE BOOTSTRAP</h3>
+                    <p class="fs-5 text-white fw-bolder">Con los mejores mentores en el curso Full Stack Junior</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carrusel 2.png" class="d-block w-100" alt="ilustracion de curso">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text-warning fw-bolder">APRENDE JAVA SCRIPT</h3>
+                    <p class="fs-5 text-white fw-bolder">Con los mejores mentores en el curso Full Stack Junior</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carrusel 3.png" class="d-block w-100" alt="ilustracion de curso">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="fw-bolder" style="color: #8CC949;">CONOCE DE NODEJS y SWEET ALERT</h3>
+                    <p class="fs-5 text-white fw-bolder">Con los mejores mentores en el curso Full Stack Junior</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
     <main class="container">
-        <div class="row py-5 align-items-center">
-          <div class="col-md-7">
-            <h1 class="display-4 btext-primary text-center" >Javascript</h1>
-            <p class="lead text-justify-md">
-              JavaScript es un lenguaje de programación esencial para el desarrollo web, que proporciona la capacidad de agregar interactividad y dinamismo a las páginas web, así como para crear aplicaciones web completas tanto en el lado del cliente como en el lado del servidor.
-            </p>
 
-          <div class="col-md-5">
-            <img src="./assets/img/logo JavaS.png" class="d-block w-100" alt="Logo JavaScript">
-          </div>
-        </div>
-        <div class="accordion accordion-flush col-md-5" id="accordionFlushExample">
-
-            <div class="accordion-item">
-              <h2 class="accordion-header fs-1 fw-normal">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Algunas de las características principales de JavaScript son:
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"> 
-                    <ul>
-                        <li><strong>Es un lenguaje interpretado,</strong> lo que significa que se ejecuta directamente en el navegador sin necesidad de una compilación previa.</li>
-                        <li><strong>Es un lenguaje orientado a objetos,</strong> lo que permite la creación de objetos y el uso de conceptos como herencia y encapsulación.</li>
-                        <li><strong>Tiene tipado dinámico,</strong> lo que significa que no es necesario declarar el tipo de las variables.</li>
-                        <li><strong>Soporta funciones de primera clase,</strong> lo que permite asignar funciones a variables, pasarlas como argumentos y devolverlas como valores.</li>
-                        <li><strong>Permite la manipulación del DOM (Document Object Model),</strong> lo que permite modificar la estructura y el contenido de una página web.</li>
+        <!-- Contenedores de NODEJS Respetar espacio (ultimos contenedores) -->
+        <section class="mt-5 row d-flex align-content-center bg-body-tertiary">
+            <div class="col-md-6 d-flex align-self-center pt-5">
+              <article>
+                <h2 class="fs-1 fw-bolder text-success ">CONOCE DE NODE JS</h2>
+                <p class="fon">Node.js es una plataforma de tiempo de ejecución de JavaScript que permite ejecutar código JavaScript fuera del navegador, en el lado del servidor. A diferencia del uso tradicional de JavaScript en el navegador, Node.js permite construir aplicaciones de servidor, aplicaciones de línea de comandos y herramientas de desarrollo.</p>
+                <p>Node.js fue creado por Ryan Dahl en el año 2009.</p>
+                <h5 class="lead text-success fs-4"> Developers Joyent | Desarrollador</h5>
+              </article>
+            </div>
+              <article class="col-md-2 mt-5">
+                <img src="./assets/img/node (1).png" class="w-100 rounded" alt="ilustracion nodejs">
+              </article>
+              <article class="col-md-2 pt-5 mt-5">
+                <img src="./assets/img/node (2).png" class="w-100 rounded" alt="ilustracion nodejs">
+              </article>
+              <article class="col-md-2 mt-5">
+                <img src="./assets/img/node (3).png" class="w-100 rounded" alt="ilustracion nodejs">
+              </article>
             
-                    </ul> 
-                </div>
-              </div>
+          </section>
+          <section class=" mt-3 row d-flex align-content-center">
+            <div class="col-md-7  pt-2">
+                <h2 class="mt-4 fs-1 fw-bolder text-success d-flex justify-content-center ">Casos donde se aplica NODE JS</h2>
+                 <li><span class="fw-bolder">Desarrollo de aplicaciones web del lado del servidor:</span> Node.js permite crear servidores web escalables y eficientes utilizando JavaScript tanto en el frontend como en el backend. Puedes construir aplicaciones web completas utilizando frameworks populares como Express.js, Sails.js o Meteor.js.</li>
+                 <li><span class="fw-bolder">API y servicios web:</span> Puedes utilizar Node.js para construir y exponer APIs y servicios web. Node.js proporciona una forma sencilla de manejar solicitudes HTTP, procesar datos y generar respuestas, lo que lo convierte en una opción popular para la creación de APIs RESTful.</li>
+                 <li><span class="fw-bolder">Aplicaciones de tiempo real:</span> Node.js brinda soporte para aplicaciones de tiempo real mediante la tecnología de comunicación bidireccional llamada WebSockets. Esto permite construir aplicaciones de chat en tiempo real, juegos multijugador y aplicaciones de colaboración en tiempo real.</li>
+                 <li><span class="fw-bolder">Automatización de tareas y scripts:</span> Node.js se puede utilizar para escribir scripts de línea de comandos y automatizar tareas en el sistema operativo. Puedes realizar tareas como procesamiento de archivos, manipulación de bases de datos, programación de tareas periódicas y más.</li>
+                 <li><span class="fw-bolder">Aplicaciones de Internet de las cosas (IoT):</span> Node.js es una opción popular para el desarrollo de aplicaciones relacionadas con el IoT debido a su capacidad para manejar múltiples conexiones concurrentes y eventos en tiempo real.</li>
+                 <li><span class="fw-bolder">Procesamiento de archivos y streaming: :</span> Node.js es eficiente en el manejo de operaciones de entrada/salida (E/S). Esto lo hace adecuado para el procesamiento de archivos y el streaming de datos, como subir y descargar archivos, transmisión de video y audio, y manipulación de datos en tiempo real.</li>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Historia de JavaScript
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">                        
-                    <p> El origen javascript surge a partir de un navegador que actualmente no existe: NetScape. En 1995, Netscape se dio cuenta de que, cuando tenía algún documento HTML, no podía interactuar con lo que hacía el usuario. Es decir, lo único que podía hacer el navegador era esperar a recibir unos datos y luego enviarlos, a modo de formulario. Además, podía darle ciertos aspectos de diseño, como el alto y ancho, pero con muy poca versatilidad.</p>
-
-                    <p>Entonces, fue brendan eich quien desarrollo javascript para NetScape. Este lenguaje de programación le da muchas más posibilidades a los navegadores. Con JavaScript podemos, por ejemplo, crear controles en la búsqueda de un contenido para que solo devuelva resultados con contenido, no textos vacíos.</p>
-                    
-                    <p>El siguiente momento importante en la historia de JavaScript es la creación del elemento XML HttpRequest por parte de Microsoft en 1998. Este elemento viene a ser el padre de AJAX y nos permite cargar contenido o interactuar con el backend sin tener que volver a cargar la totalidad de la página web.</p>
-                    
-                    <p>A lo largo de los años, se continuó hablando de JavaScript y, en el 2000, Douglas Crockford inventó el documento JSON, una forma de estandarizar objetos en JavaScript. En 2004, Gmail empezó a utilizar JavaScript e incorporó AJAX masivamente para hacer sus procesos más eficaces.</p>
-                    
-                    <p>Llegados a este punto, JavaScript era tan útil que, en 2006, John Resig creó la librería JQuery, que nos permite reducir la complejidad de la sintaxis de JavaScript.</p>
-                </div>
-              </div>
+            <div class="col-md-5 text-center">
+                <img src="./assets/img/nodejs.png" class="w-100 rounded pt-5" alt="ilustracion nodejs">
+                <h5 class="pt-5 fs-3 fw-bolder text-success  ">Descarga e Instala NODE.JS</h5>
+                <p class="fs-5">Programa como un prodigio...</p>
+                <a class="mt-2 btn btn-success " href="https://nodejs.org/en"  target="_blank">Ver Más</a>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Creador de JavaScript 
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">El creador del lenguaje de programación JavaScript es Brendan Eich. Fue desarrollado en 1995 mientras trabajaba para Netscape Communications Corporation. JavaScript fue originalmente diseñado para agregar interactividad a las páginas web y se ha convertido en uno de los lenguajes de programación más populares y ampliamente utilizados en el desarrollo web. Brendan Eich también ha realizado contribuciones significativas a otros proyectos y tecnologías relacionadas con la web.</div>
-              </div>
-            </div>
-          </div>
-      </main>
-               
+        </section>
+    </main>
+    
     
 </body>
 <!-- JS link from bootstrap -->
