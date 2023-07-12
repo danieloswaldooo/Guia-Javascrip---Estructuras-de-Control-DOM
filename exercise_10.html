@@ -87,17 +87,20 @@
             <!-- fs-?? - font size from 1 biggest to 6 smallest -->
             <!-- fw-?? - font weight turns lighter -->
                 <h2 class="fs-1 fw-bolder">Instructions:</h2>
-                <p class="lead fs-3">Crear una función que....</p>
+                <p class="lead fs-3">Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado por el usuario. </p>
             </article>
 
             <!-- right side -->
             <article class="col-md-7 ps-5">
-                <h2 class="fs-1 fw-bolder">example</h2>
-    <label for="" class="fs-3 lead">Ingresa tu example</label>
-    <input type="example" class="example" name="example" id="example">
-    <br>
-    <!-- used onClick event -->
-    <button onclick="example()">Enviar</button>
+                <h2 class="fs-1 fw-bolder">Ejemplo:</h2>
+                <div class="mb-3">
+                    <label for="colocaNum" class="form-label"> Coloque el número de la tabla de multiplicar que desea consultar </label>
+                    <input type="number" name="colocaNum" id="colocaNum" class="form-control"> 
+                </div>
+
+                <button onclick="multi()">multiplicar</button><br><br> 
+                <div id="tabla-multi"></div>
+
             </article>
         </section>
     </main>
