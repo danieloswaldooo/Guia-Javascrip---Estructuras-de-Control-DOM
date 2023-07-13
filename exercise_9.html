@@ -82,27 +82,30 @@
     <main class="container-xxl">
         <section class="row pt-5 d-flex align-items-center">
             <!-- left side -->
-            <article class="col-md-5">
-            <!-- fs-?? - font size from 1 biggest to 6 smallest -->
-            <!-- fw-?? - font weight turns lighter -->
-                <h2 class="fs-1 fw-bolder">Instructions:</h2>
-                <p class="lead fs-3">
-                    
-                    Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:  
-                    
-                    La cantidad de valores negativos ingresados. 
-                    
-                    La cantidad de valores positivos ingresados. 
-                    
-                    La cantidad de múltiplos de 15. 
-                    
-                    El valor acumulado de los números ingresados que son pares.
+            <article class="text-center , col-8 , container-fluid">
+                <!-- fs-?? - font size from 1 biggest to 6 smallest -->
+                <!-- fw-?? - font weight turns lighter -->
+                    <h2 class="fs-1 fw-bolder">Instructions:</h2>
+                    <p class="lead fs-3">
+                        
+                        Se realiza la carga de 10 valores enteros por teclado.
                     </p>
-                    <br>
-                    <br>
-            
-            </article>
-            <article class="container-fluid , align-items-center">
+                    <p class="lead fs-3">
+                        Se desea conocer:
+                        
+                        La cantidad de valores negativos ingresados. 
+                        
+                        La cantidad de valores positivos ingresados. 
+                        
+                        La cantidad de múltiplos de 15. 
+                        
+                        El valor acumulado de los números ingresados que son pares.
+                        </p>
+                        <br>
+                        <br>
+                </article>
+            <article class="container-fluid , align-items-center , col-8">
+            <div class="text-center">
             <h1>Contador de valores enteros</h1>
             <!-- Entradas  o campos donde vamos a colocar los numeros -->
             <input type="number" id="valorE1" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
@@ -116,15 +119,20 @@
             <input type="number" id="valorE9" required class="form-label , row-cols-6, col-6, text-bg-light"><br>
             <input type="number" id="valorE10" required class="form-label , row-cols-6, col-6, text-bg-light"><br><br>
             <!-- Enviar los datos recuperamos por medio de la funcion onclick-->
+            </div>
+            <div class="text-center">
             <button onclick="contarValores()">Calcular</button>
+            </div>
         </article>
+    
             <!-- Es donde se van a imprimir los valores-->
-            <h2>Valores:</h2>
-            <p>Valores negativos: <span id="Negativos"></span></p>
-            <p>Valores positivos: <span id="Positivos"></span></p>
-            <p>Múltiplos de 15: <span id="Multiplos15"></span></p>
-            <p>Valor acumulado de números pares: <span id="AcumuladoValorPares"></span></p>
-            </article>
+            <h2 class="text-center">Valores:</h2>
+            <p class="text-center">Valores negativos: <span id="Negativos"></span></p>
+            <p class="text-center">Valores positivos: <span id="Positivos"></span></p>
+            <p class="text-center">Múltiplos de 15: <span id="Multiplos15"></span></p>
+            <p class="text-center">Valor acumulado de números pares: <span id="AcumuladoValorPares"></span></p>
+        
+        </article>
         </section>
     </main>
 </body>
