@@ -11,3 +11,18 @@ color: #0D6 !important;
 i{
     font-size: 25px;
 }
+
+/* making images bigger when you hover over them */
+.content_image img{
+    width: 100%;
+    height: 100%;
+    /*manipulate image resolution*/
+    object-fit: cover;
+    /*background-size: cover;*/
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+
+.content_image img:hover{
+    transform: scale(2.1);
+}
